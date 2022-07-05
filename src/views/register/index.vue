@@ -13,7 +13,7 @@
       </el-input>
     </div>
     <div class="msgCode textCenter">
-      <el-button>获取短信验证码</el-button>
+      <el-button @click="handleLogin">获取短信验证码</el-button>
     </div>
     <div class="agree c-a5 textCenter">完成注册即代表你同意<span>用户协议</span>和<span>隐私政策</span></div>
     <div class="login f16 f600 flex flex-yCenter flex-xCenter">已有账号 去登录<el-icon>
@@ -24,10 +24,11 @@
 </template>
 
 <script setup lang="ts">
+import { userRegisterApi } from '@/api/user'
 import { ref } from 'vue'
 
 const select = ref('')
-const phone = ref('')
+let phone = ref('') as unknown as string
 
 // 所有国家区域号
 const countryList = ref(
@@ -264,6 +265,11 @@ const countryList = ref(
     { name: "南苏丹共和国", areaCode: "211" }
   ],
 )
+
+const handleLogin = async () => {
+    const res = await userRegisterApi(phone)
+    console.log(272, res);
+}
 </script>
 
 <style scoped lang="scss">
