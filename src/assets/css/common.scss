@@ -1,0 +1,307 @@
+@import "./variables.scss";
+.c-main {
+  color: $maincss;
+}
+.c-main01 {
+  color: $maincss01;
+}
+.c-main02 {
+   color: $maincss02;
+ }
+.c-ded {
+  color: $c-ded;
+}
+.c-50 {
+  color: $c-50;
+}
+.c-e68 {
+  color: $c-e68;
+}
+.c-c40 {
+  color: $c-c40;
+}
+.c-c20 {
+  color: $c-c20;
+}
+.c-c30 {
+  color: $c-c30;
+}
+.c-ff {
+  color: $c-ff;
+}
+.c-a5 {
+  color: $c-a5;
+}
+.c-333 {
+  color: $c-333;
+}
+.c-666 {
+  color: $c-666;
+}
+.c-999 {
+  color: $c-999;
+}
+.c-19 {
+  color: $c-19;
+}
+.c-ccc {
+  color: $c-ccc;
+}
+.c-ef {
+  color: $c-ef;
+}
+.c-399 {
+  color: $c-399;
+}
+.c-8ac {
+  color: $c-8ac;
+}
+.c-b65 {
+  color: $c-b65;
+}
+.c-a3 {
+  color: $c-a3;
+}
+.bg-f5 {
+  background-color: #{$c-f5};
+}
+.bg-ff {
+  background-color: #{$c-ff};
+}
+.textLeft {
+  text-align: left;
+}
+.textCenter {
+  text-align: center;
+}
+.textRight {
+  text-align: right;
+}
+.f500 {
+  font-weight: 500;
+}
+.f600 {
+  font-weight: 600;
+}
+.f700 {
+  font-weight: 700;
+}
+.f400 {
+  font-weight: 400;
+}
+.fBlod {
+  font-weight: bold;
+}
+.fNormal{
+  font-weight: normal;
+}
+.f32 {
+  font-size: 32px;
+}
+.f24 {
+  font-size: 24px;
+}
+.f22 {
+  font-size: 22px;
+}
+.f18 {
+  font-size: 18px;
+}
+.f16 {
+  font-size: 16px;
+}
+.f15 {
+  font-size: 15px;
+}
+.f14 {
+  font-size: 14px;
+}
+.f13 {
+  font-size: 13px;
+}
+.f12 {
+  font-size: 12px;
+}
+.borderAll {
+  border: 1px solid $c-eee;
+}
+.borderTop {
+  border-top: 1px solid $c-eee;
+}
+.borderBottom {
+  border-bottom: 1px solid $c-eee;
+}
+.borderLeft {
+  border-left: 1px solid $c-eee;
+}
+.borderRight {
+  border-right: 1px solid $c-eee;
+}
+.edit {
+  cursor: pointer;
+  color: #1890FF;
+}
+.hand{
+  cursor: pointer;
+}
+.oneLine {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.twoLine {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.moreLine {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.block {
+  display: block;
+}
+.inlineBlock {
+  display: inline-block;
+}
+.vMiddle {
+  vertical-align: middle;
+}
+.c-main-btn {
+  background: $maincss02;
+  border-color: $maincss02;
+}
+.c-fba-btn {
+  background: $c-fba;
+  border-color: $c-fba;
+}
+.c-c39-btn {
+  background: $c-399;
+  border-color: $c-399;
+}
+.c-c40-btn {
+  background: $c-c40;
+  border-color: $c-c40;
+  color: $c-ff;
+  &:hover, &:active, &:focus {
+    background: $c-c40;
+    color: $c-ff;
+    border-color: $c-c40;
+  }
+}
+.c-default-btn {
+  color: $c-666;
+  border-color: $c-666;
+  background: none;
+}
+.toolTip {
+  background: $c-399;
+}
+
+@each $fsSize in 30 28 26 24 22 20 18 16 14 12 {
+  .fs#{$fsSize} {
+    font-size: #{$fsSize}px;
+  }
+}
+@for $px from 0 through 100 {
+  .pd#{$px} {
+    padding: #{$px}px;
+  }
+  .pl#{$px} {
+    padding-left: #{$px}px;
+  }
+  .pr#{$px} {
+    padding-right: #{$px}px;
+  }
+  .pt#{$px} {
+    padding-top: #{$px}px;
+  }
+  .pb#{$px} {
+    padding-bottom: #{$px}px;
+  }
+
+  .mg#{$px} {
+    margin: #{$px}px;
+  }
+  .ml#{$px} {
+    margin-left: #{$px}px;
+  }
+  .mr#{$px} {
+    margin-right: #{$px}px;
+  }
+  .mt#{$px} {
+    margin-top: #{$px}px;
+  }
+  .mb#{$px} {
+    margin-bottom: #{$px}px;
+  }
+
+  .w#{$px} {
+    width: #{$px}px;
+  }
+  .h#{$px} {
+    height: #{$px}px;
+  }
+  .lh#{$px} {
+    line-height: #{$px}px;
+  }
+}
+
+.ellipsis-2-line{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.flex{
+  display: flex;
+}
+.flex-xCenter{
+  justify-content: center;
+}
+.flex-yCenter{
+  align-items: center;
+}
+.flex-xRight{
+justify-content: right;
+}
+.flex-column{
+  flex-direction: column;
+}
+.flex-xBetween{
+  justify-content: space-between;
+}
+.flex-xEvenly{
+  justify-content: space-evenly;
+}
+.flex-xAround {
+  justify-content: space-around
+}
+.flex-xWrap {
+  flex-wrap: wrap
+}
+
+@function calcFontSize($n) {
+  @return $n / 1.25;
+}
+@function calcWidth($n) {
+  @return $n / 1.25;
+}
+@function calcHeight($n) {
+  @return $n / 1.25;
+}
+
+// 悬浮效果
+.box-hover {
+  -webkit-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+      &:hover {
+        box-shadow: 0 16px 32px 0 rgba(48, 55, 66, 0.15);
+        transform: translate(0,-5px);
+        transition-delay: 0s !important;
+      }
+  }
